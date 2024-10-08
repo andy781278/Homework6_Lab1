@@ -1,0 +1,23 @@
+﻿<Window x:Class="Homework6_Lab1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework6_Lab1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="list" Margin="289,132,461,131">
+            <ListBoxItem Content="+"/>
+            <ListBoxItem Content="-"/>
+            <ListBoxItem Content="*"/>
+            <ListBoxItem Content="/"/>
+            <ListBoxItem Content="%"/>
+        </ListBox>
+        <TextBox Name="leftbox" HorizontalAlignment="Left" Margin="143,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="rightbox" HorizontalAlignment="Left" Margin="368,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <Label Content="=" HorizontalAlignment="Left" Margin="516,0,0,0" VerticalAlignment="Center"/>
+        <Button Content="Calculate" HorizontalAlignment="Center" Margin="0,323,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label Name="result" Content="" HorizontalAlignment="Left" Margin="550,0,0,0" VerticalAlignment="Center"/>
+    </Grid>
+</Window>
