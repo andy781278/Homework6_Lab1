@@ -48,18 +48,17 @@ namespace Homework6_Lab1
                         break;
                     default:
                         res = 0;
-                        result.Content = "No Operations Selected!";
+                        MessageBox.Show("No Operations Selected!");
                         return;
-                        break;
                 }
                 result.Content = res.ToString();
             }
             catch (DivideByZeroException)
             {
-                result.Content = "Cannot divide by zero!";
+                MessageBox.Show("Cannot divide by zero!");
             }
             catch (FormatException) {
-                result.Content = "Cannot do operations on non-numbers!";
+                MessageBox.Show("Cannot do operations on non-numbers!");
             }
         }
     }
